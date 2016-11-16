@@ -1,0 +1,276 @@
+*{
+	width:100%;
+	padding: 1%;
+	margin:1%;
+	box-sizing: border-box; 
+	float: left;
+	font-size: 10px; 
+	font-family: 'Quicksand', sans-serif;
+	line-height: 1.3em; 
+}
+
+#container,ul,nav,body,html{
+	border:none;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+#container{
+	width:100%;
+	margin:0; 
+}
+
+/*Navigation*/
+nav{
+	border: 0;
+    z-index: 100;
+ 	position: fixed;
+    width: 100%; 
+    list-style: none;
+    top: .1em; 
+    white-space: normal; 
+}
+	
+nav .btn {
+	width:13%;
+	height:3.2em;
+	font-size: 1.8em;
+	float:left;
+	margin:.5em;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+a, a:link, a:visited, a:active, a:hover { text-decoration: none; }
+.hamburger {
+	display: none;
+}
+
+
+.menu {
+	display: none; 
+}
+
+/*Main content*/
+
+
+section {
+	width: 100%;
+	margin:1em 0;
+	margin-bottom: 3em; 
+}
+
+h2 {
+	clear: both; 
+	color: CHANGE THIS;
+	font-size: 3em;
+	margin-top: 3em; 
+}
+h4{
+	clear: both;
+	font-size: 2.5em; 
+	color: grey;
+}
+
+p {
+	width: 50%; 
+	float:left;
+	font-size: 2em; 
+	color: grey
+}
+
+img {
+	width: 27%;
+	padding: 2px;
+	display: inline-block;
+}
+.bigImage {
+	width: 45%;
+}
+/*HOME*/
+#home>img{
+	width: 100%;
+	padding: 0;
+	margin:0;
+	position: relative; 
+}
+h1, #subtitle{
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute; 
+}
+h1 { 
+	font-size: 4em; 
+	margin-bottom: 0; 
+   top: 6.4em; 
+   left: 2em; 
+   width: 9.5em; 
+   padding: .1em;
+   padding-top: .3em;  
+}
+#subtitle {
+	font-size:2.5em;
+	margin: 2em;
+   top: 12em; 
+   left: 1.3em; 
+   width: 9em; 
+}
+
+
+/*ABOUT ME*/
+
+#favorites{
+	width: 80%;
+	margin: 0;
+	padding: 0;
+}
+
+/*CONTACT ME*/
+#contactMe a {
+	display: inline-block;
+	width: 1em;
+	margin: 8em; 
+}
+.socialLinks {
+	width: 13em;
+	height: 13em; 
+	margin-right: 8em;
+	display: inline-block; 
+	}
+
+/*FOOTER*/
+footer>div{
+	width:28%;
+	height:200px;
+	float:left;
+	margin:10px 1.5%;
+}
+
+footer{
+	clear:both;
+	height: 90px;
+}
+
+footer>div {
+	height: 60px;
+}
+
+
+/*-------MEDIA QUERIES-----*/
+@media (min-width:350px ) and (max-width:800px){
+
+
+h1, #subtitle {
+	font-size: 3.5em;
+	margin: 0;
+	padding: 0;
+	top: 3em;
+}
+#subtitle {
+	top: 4.5em;
+	left: 2em;
+	width: 7.5em;
+}
+nav .btn {
+	font-size: 1.5em ;
+}
+
+#contactMe a {
+	margin: 0;
+	margin-right: 16em;
+}
+section {
+	margin-top:6em; 
+}
+
+}
+
+@media (min-width:5px ) and (max-width:350px){
+* {
+	font-size: 6px;
+	margin-left:.5em;
+}
+nav {
+	display: none;
+}
+
+.hamburger {
+  position:fixed;
+  top:0.3em;
+  right:0.1em;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:rgb(0,0,0);
+  border:0;
+  font-size:1.4em; 
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+  display: block; 
+  width: 4em;
+}
+
+.menu{
+	z-index:1000000; 
+	font-weight:bold; 
+	font-size:1.5em; 
+	width:50%; 
+	background:rgb(225, 225, 225);;  
+	position:absolute; 
+	text-align:center;
+	margin-left: 50%;
+	line-height: 1.5em; 
+	position: fixed;
+}
+
+.menu li:hover{
+	display: block;    
+	background:#181818; 
+	padding:15px 0 15px 0; 
+	border-bottom:#1d1f20 1px solid;
+}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;}
+
+#container {
+	width:95%; 
+}
+
+h1, #subtitle {
+	font-size: 2.5em;
+	margin: 0;
+	padding: 0;
+	top: 3em;
+}
+#subtitle {
+	top: 4.5em;
+	left: 2em;
+	width: 7.5em;
+}
+p{
+	
+	float: none;
+	width: 95%;
+}
+.page{
+	width: 95%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+#contactMe a {
+	margin: 0;
+	margin-right: 16em;
+}
+
+.bigImage{
+	width: 100%;
+}
+
